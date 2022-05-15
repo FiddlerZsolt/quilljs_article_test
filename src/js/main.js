@@ -59,7 +59,7 @@ tagContainer.addEventListener("click", (e) => {
 saveBtn.addEventListener("click", (e) => {
   e.preventDefault();
   try {
-    const tags = document.querySelectorAll(".tag");
+    const tags = selectAll(".tag");
     if (articleHeadline.value === "") {
       throw "A címet kötelező megadni!";
       return;
