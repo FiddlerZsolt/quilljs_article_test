@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+:root {
+  --light-color: #f5f6fa;
+  --dark-color: #2f3640;
+  --red: #c23616;
+  --red-hover: #e84118;
+  --green: #44bd32;
+  --green-hover: #4cd137;
+  --font: "Quicksand", sans-serif;
+  --font-size: 25px;
+}
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  font-family: var(--font);
+  font-size: var(--font-size);
+}
+
+h1 {
+  font-size: 1em;
+}
+
+.btn {
+  --width: 30px
+  --height: 30px
+  --padding: 0 .2em;
+  --bg: var(--dark-color);
+  --txt: var(--light-color);
+  --hover-bg: var(--light-color);
+  --hover-txt: var(--dark-color);
+  --hover-border: var(--dark-color);
+  background-color: transparent;
+  border-color: transparent;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--width) !important;
+  height: var(--height) !important;
+  background-color: var(--bg);
+  color: var(--txt);
+  cursor: pointer;
+  padding: var(--padding);
+  font-size: 1em;
+}
+.btn:hover {
+  background-color: var(--hover-bg);
+  color: var(--hover-txt);
+  border: 1px solid var(--hover-border);
+}
+
+.btn.mini {
+  --width: 30px !important;
+  --height: 30px !important;
+  --padding: 0;
+}
+
+.btn.del {
+  --bg: var(--red);
+  --txt: var(--light-color);
+  --hover-bg: var(--red-hover);
+  --hover-txt: var(--light-color);
+  --hover-border: var(--red-hover);
+}
+
+section {
+  padding-inline: 1em;
+}
+section h2 {
+  margin-block: 0.5em;
+  padding-bottom: 0.2em;
+  border-bottom: 2px dashed var(--dark-color);
+}
+section .new-article {
+  width: 60%;
+  margin-inline: auto;
+}
+@media only screen and (max-width: 1300px) {
+  section .new-article {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  section .new-article {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 550px) {
+  section .new-article {
+    width: 100%;
+  }
+}
+section .form-row {
+  margin-bottom: 0.2em;
+}
+section .form-row label div {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  padding: 5px 15px;
+}
+section .form-row .input-container {
+  display: flex;
+  flex-direction: column;
+}
+section .form-row .input-container input {
+  background-color: transparent;
+  border: transparent;
+  outline: transparent;
+  font-size: 0.7em;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+}
+section .form-row .tag-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0.2em;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+section .form-row .tag-container span.tag {
+  height: 30px;
+  line-height: 30px;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  font-size: 0.7em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0.3em;
+}
+section .form-row .tag-container span.tag .btn.delete-tag {
+  margin-left: 0.4em;
+}
+section .form-row .article-sub-headline {
+  min-height: 10em;
+}
+section .form-row .article-body {
+  min-height: 20em;
+}
+section .form-row:last-child {
+  margin-top: 1em;
+}
+section .form-row:last-child button.save {
+  --padding: .5em 1em;
+  --bg: var(--green);
+  --txt: var(--light-color);
+  --hover-bg: var(--green-hover);
+  --hover-txt: var(--light-color);
+  --hover-border: var(--green-hover);
+}/*# sourceMappingURL=main.css.map */
